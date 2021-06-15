@@ -15,7 +15,9 @@ const httpOptions = {
 })
 export class EmployeeService {
 
-  private apiUrl = 'http://localhost:3000/employees';
+  //private apiUrl = 'http://localhost:3000/employees';
+  //deployment edit: 
+  private apiUrl = 'employees';
 
   constructor(private http: HttpClient) { }
 
