@@ -1,0 +1,10 @@
+<div class="employee"
+class="{{ employee.status ? 'active' : 'inactive'}}"
+(dblclick)="onToggle(employee)">
+    <h3 class="disable-select">
+        {{ employee.name }} {{ employee.lastname }}
+        <fa-icon (click)="onDelete(employee)" [ngStyle]="{ color: 'red' }"
+        [icon]="faTimes"></fa-icon>
+    </h3>
+    <p class="disable-select">{{ employee.departmentid == 0 ? 'Development' : employee.departmentid == 1 ? 'Management' : 'HR'}}</p>
+</div>

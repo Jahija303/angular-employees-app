@@ -1,0 +1,10 @@
+.add-form {
+    margin-bottom: 40px;
+}
+
+select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-family: "Poppins", sans-serif;
+}

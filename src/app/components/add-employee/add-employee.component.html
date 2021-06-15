@@ -1,0 +1,23 @@
+<form *ngIf="showAddForm" class="add-form" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+        <label for="name">Name</label>
+        <input type="text" name="name" [(ngModel)]="name" id="name" placeholder="Enter your name">
+    </div>
+    <div class="form-control">
+        <label for="lastname">Lastname</label>
+        <input type="text" name="lastname" [(ngModel)]="lastname" id="lastname" placeholder="Enter your lastname">
+    </div>
+    <div class="form-control form-control-dropdown">
+        <label for="department">Choose a department:</label>
+            <select id="departmentid" name="departmentid" [(ngModel)]="departmentid">
+                <option value="0">Development</option>
+                <option value="1">Managment</option>
+                <option value="2">HR</option>
+            </select>
+    </div>
+    <div class="form-control form-control-check">
+        <label for="status">Active employee:</label>
+            <input type="checkbox" name="status" [(ngModel)]="status" id="status">
+    </div>
+    <input type="submit" value="Add Employee" class="btn btn-block">
+</form>
